@@ -26,6 +26,8 @@ void test_pointer(void)
     free(stu.pName);
 
     test_pointer_multi();
+    show_union();
+    show_enum()
 }
 
 void test_pointer_multi(void)
