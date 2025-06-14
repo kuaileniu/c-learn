@@ -11,7 +11,7 @@ void test_pointer(void)
 {
     struct MyStu stu;
     stu.id = 1;
-    
+
     stu.pName = (char *)malloc(20 * sizeof(char));
     if (stu.pName == NULL)
     {
@@ -21,6 +21,7 @@ void test_pointer(void)
     snprintf(stu.pName, 20, "Student %d", stu.id);
 
     printf("ID: %d, Name: %s\n", stu.id, stu.pName);
-
+    printf("一个指针的大小是%d\n", sizeof(char *));
+    printf("name:%s\n", stu.pName);
     free(stu.pName);
 }
