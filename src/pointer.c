@@ -37,5 +37,5 @@ void test_pointer_multi(void)
     printf("p = %d\n", *p);
     printf("pp = %d\n", **pp);
     printf("a = %d, p = %d, pp = %d\n", a, *p, **pp);
-    printf("a的地址是%p, p的地址是%p, pp的地址是%p\n", (void *)&a, (void *)p, (void *)pp);
+    printf("a的地址是%p, p的地址是%p, pp的地址是%p\n",&a, &p,&pp);
 }
