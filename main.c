@@ -4,7 +4,8 @@
 
 int main() {
     printf("Hello, World!\n");
-
-    void test_pointer();
+    printf("3333Hello, World!\n");
+    test_pointer();
+    printf("44444Hello, World!\n");
     return 0;
 }
