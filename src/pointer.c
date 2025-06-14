@@ -11,6 +11,7 @@ void test_pointer(void)
 {
     struct MyStu stu;
     stu.id = 1;
+    
     stu.pName = (char *)malloc(20 * sizeof(char));
     if (stu.pName == NULL)
     {
