@@ -24,4 +24,18 @@ void test_pointer(void)
     printf("一个指针的大小是%d\n", sizeof(char *));
     printf("name:%s\n", stu.pName);
     free(stu.pName);
+
+    test_pointer_multi();
+}
+
+void test_pointer_multi(void)
+{
+    int a = 10;
+    int *p = &a;
+    int **pp = &p;
+    printf("a = %d\n", a);
+    printf("p = %d\n", *p);
+    printf("pp = %d\n", **pp);
+    printf("a = %d, p = %d, pp = %d\n", a, *p, **pp);
+    printf("a的地址是%p, p的地址是%p, pp的地址是%p\n", (void *)&a, (void *)p, (void *)pp);
 }
