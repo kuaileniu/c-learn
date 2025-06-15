@@ -30,7 +30,7 @@ void test_memory(void)
 
     m = (int *)realloc(m, sizeof(int) * 10); // 重新分配通过mallock 或 calloc 开辟的内存区域
     m[9] = 9;
-    printf("Allocated memory for array m with realloc: %d\n", m[9]);
+    printf("Allocated memory for array m with realloc: %d\n", m[9]);   \
     free(m);
     printf("test_memory called\n");
 }
