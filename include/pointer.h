@@ -3,4 +3,4 @@
 
 void test_pointer(void);
 
-#endif LEARN_H
+#endif
