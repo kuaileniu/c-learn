@@ -5,6 +5,5 @@ int main()
 {
     printf("Hello, World!\n");
     test_pointer();
-    show()
     return 0;
 }

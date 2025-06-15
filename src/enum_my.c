@@ -2,12 +2,12 @@
 
 enum Weekday {
     MONDAY = 1,
-    TUESDAY=9,
-    WEDNESDAY=10,
-    THURSDAY=11,
-    FRIDAY=12,
-    SATURDAY=13,
-    SUNDAY=14
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
 };
 
 void show_enum(void) {

@@ -9,6 +9,7 @@ struct MyStu
 
 void test_pointer(void)
 {
+    int *p = NULL;
     struct MyStu stu;
     stu.id = 1;
 
@@ -27,7 +28,7 @@ void test_pointer(void)
 
     test_pointer_multi();
     show_union();
-    show_enum()
+    // show_enum();
 }
 
 void test_pointer_multi(void)
