@@ -32,6 +32,26 @@ void show_pointer_constant(void)
     printf("Before changeConstInt, k2: %d,", k2);
     changeConstInt(pp2);                          // 修改常量指针指向的地址
     printf("After changeConstInt, k2: %d\n", k2); // Before changeIntConst, k2: 30,Value pointed by const pointer: 40
+
+    int m1 = 100;
+    int m2 = 200;
+    const int *const mp1 = &m1; // 常量指针常量，指向的值和地址都不能改变
+    // mp1 = &m2; // 这行代码会报错，因为 mp1 是常量指针常量，不能改变指向的地址
+    printf("Value pointed by const pointer constant: %d\n", *mp1);
+
+    int arr[4]={0} ;
+    char str[16] = {0,1,2,3};
+    printf("arr address: %p, str address: %p\n", (void*)arr, (void*)str);
+    // 打印arr和str的值
+    printf("arr values: ");
+    for (int i = 0; i < 4; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\nstr values: ");
+    for (int i = 0; i < 16; i++) {
+        printf("%d ", str[i]);
+    }
+    printf("\n");
     printf("show_pointer_constant called\n");
 }
 
@@ -47,4 +67,4 @@ void changeConstInt(const int *p)
     p = &k4; // 这行代码是合法的，因为我们可以改变常量指针指向的地址
     // *p = 10; // 这行代码会报错，因为 p 是常量指针，不能改变指向的值
     printf("Value pointed by const pointer: %d\n", *p);
-} 
+}
