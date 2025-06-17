@@ -178,7 +178,7 @@
  */
 void file_show_test(void)
 {
-    FILE *f1 = fopen("test.txt", "wa+");
+    FILE *f1 = fopen("test.txt", "a");
 
     if (f1 == NULL) {
         perror("Failed to open file");
