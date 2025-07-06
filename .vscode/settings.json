@@ -3,6 +3,8 @@
         "mem.h": "c",
         "mem_test.h": "c",
         "pointer.h": "c",
-        "pointer_constant.h": "c"
+        "pointer_constant.h": "c",
+        "file_test.h": "c",
+        "switch_test.h": "c"
     }
 }

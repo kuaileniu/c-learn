@@ -28,6 +28,7 @@ void test_pointer(void)
 
     test_pointer_multi();
     show_union();
+    static_show();
     // show_enum();
 }
 

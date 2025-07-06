@@ -10,16 +10,16 @@ union MyDate
 
 union RGBA
 {
-    int color;
+  int color;
 
-    char rgba[4]; // 4个字节，分别表示红、绿、蓝、透明度
+  char rgba[4]; // 4个字节，分别表示红、绿、蓝、透明度
 };
 
+void show_union()
+{
+  printf("MyDate: %d\n", sizeof(union MyDate));
+  union MyDate md = {1};
 
-void show_union(){
-    printf("MyDate: %d\n",sizeof(union MyDate));
-    union MyDate md = {1};
-
-    int hex_val = 0XABCD;
-    hex_val = (hex_val & 0XFF00) | 0X00EE;  // 保留高8位，替换低8位为EE
+  int hex_val = 0XABCD;
+  hex_val = (hex_val & 0XFF00) | 0X00EE; // 保留高8位，替换低8位为EE
 }
