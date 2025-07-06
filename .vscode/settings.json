@@ -5,6 +5,8 @@
         "pointer.h": "c",
         "pointer_constant.h": "c",
         "file_test.h": "c",
-        "switch_test.h": "c"
+        "switch_test.h": "c",
+        "tsetjmp.h": "c",
+        "setjmp.h": "c"
     }
 }

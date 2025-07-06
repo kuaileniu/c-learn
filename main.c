@@ -5,10 +5,12 @@
 #include "file_test.h"
 #include "switch_test.h"
 #include "tsingal.h"
+#include "tsetjmp.h"
 
 int main()
 {
-    run_tsingal();
+    run_tsetjmp();
+    // run_tsingal();
     // switch_show();
     // printf("Main Start !\n");
 
