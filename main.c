@@ -6,10 +6,11 @@
 #include "switch_test.h"
 #include "tsingal.h"
 #include "tsetjmp.h"
+#include "my_threads.h"
 
 int main()
 {
-    run_tsetjmp();
+   
     // run_tsingal();
     // switch_show();
     // printf("Main Start !\n");
@@ -18,5 +19,7 @@ int main()
     // test_memory();
     // test_pointer();
     // file_show_test();
+    //  run_tsetjmp();
+    run_mythreads();
     return 0;
 }

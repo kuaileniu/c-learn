@@ -9,3 +9,6 @@ gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
 
 # cmake
 cmake version 3.27.9
+
+
+ gcc  -std=c11   main.c  -pthread
