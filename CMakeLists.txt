@@ -1,5 +1,17 @@
+# cmake_minimum_required(VERSION 3.10)
+# project(Learn)
+# aux_source_directory(src SRC_SUB)
+# aux_source_directory(. SRC_CUR)
+# add_executable(learn ${SRC_SUB} ${SRC_CUR})
+# include_directories(include)
+
+
 cmake_minimum_required(VERSION 3.10)
 project(Learn)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+set(CMAKE_C_COMPILER "gcc")
 aux_source_directory(src SRC_SUB)
 aux_source_directory(. SRC_CUR)
 add_executable(learn ${SRC_SUB} ${SRC_CUR})
