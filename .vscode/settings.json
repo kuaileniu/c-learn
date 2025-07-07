@@ -8,6 +8,7 @@
         "switch_test.h": "c",
         "tsetjmp.h": "c",
         "setjmp.h": "c",
-        "threads.h": "c"
+        "threads.h": "c",
+        "unistd.h": "c"
     }
 }
