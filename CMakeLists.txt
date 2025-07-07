@@ -15,5 +15,6 @@ set(CMAKE_C_COMPILER "gcc")
 aux_source_directory(src SRC_SUB)
 aux_source_directory(. SRC_CUR)
 add_executable(learn ${SRC_SUB} ${SRC_CUR})
+# 链接 pthread 库（即使使用 threads.h 也需要）
 target_link_libraries(learn PRIVATE pthread) # 或 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread")
 include_directories(include)
