@@ -8,7 +8,7 @@
 
 int thread_func(void *arg)
 {
-    printf("Hello from thread!\n");
+    printf("Hello from thread !\n");
     return 0;
 }
 
