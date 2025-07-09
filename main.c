@@ -7,6 +7,7 @@
 #include "tsingal.h"
 #include "tsetjmp.h"
 #include "my_threads.h"
+#include "condcoop.h"
 
 int main()
 {
@@ -20,6 +21,7 @@ int main()
     // test_pointer();
     // file_show_test();
     //  run_tsetjmp();
-    run_mythreads();
+    // run_mythreads();
+    run_condcoop();
     return 0;
 }
