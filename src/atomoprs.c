@@ -16,7 +16,7 @@ int thd_proc1(void *arg)
         do
         {
             new = old + 1;
-        } while (!atomic_compare_exchange_weak(&counter, &old, new));
+        } while (!atomic_compare_exchange_weak(&counter, &old, new)); /**如果old值与counter相同则将new值写入counter；否则放弃修改；atomic_compare_exchange_weak执行期间其他线程无法对 counter进行操作 */
 
         thrd_sleep(&interv, 0);
     }
