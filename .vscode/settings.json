@@ -9,6 +9,7 @@
         "tsetjmp.h": "c",
         "setjmp.h": "c",
         "threads.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "stdatomic.h": "c"
     }
 }

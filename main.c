@@ -8,6 +8,7 @@
 #include "tsetjmp.h"
 #include "my_threads.h"
 #include "condcoop.h"
+#include "atomoprs.h"
 
 int main()
 {
@@ -22,6 +23,7 @@ int main()
     // file_show_test();
     //  run_tsetjmp();
     // run_mythreads();
-    run_condcoop();
+    // run_condcoop();
+    run_atomoprs();
     return 0;
 }
