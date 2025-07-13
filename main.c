@@ -9,10 +9,10 @@
 #include "my_threads.h"
 #include "condcoop.h"
 #include "atomoprs.h"
+#include "spinlock.h"
 
 int main()
 {
-   
     // run_tsingal();
     // switch_show();
     // printf("Main Start !\n");
@@ -24,6 +24,7 @@ int main()
     //  run_tsetjmp();
     // run_mythreads();
     // run_condcoop();
-    run_atomoprs();
+    // run_atomoprs();
+    run_spinlock();
     return 0;
 }

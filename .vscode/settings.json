@@ -10,6 +10,8 @@
         "setjmp.h": "c",
         "threads.h": "c",
         "unistd.h": "c",
-        "stdatomic.h": "c"
+        "stdatomic.h": "c",
+        "spinlock.h": "c",
+        "atomoprs.h": "c"
     }
 }
