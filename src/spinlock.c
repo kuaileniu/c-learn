@@ -3,7 +3,7 @@
 #include <threads.h>
 #include <stdatomic.h>
 
-atomic_llong counter = 0;
+atomic_llong spin_counter = 0;
 atomic_flag aflag = ATOMIC_FLAG_INIT;
 
 int thrd_proc1(void *arg)
@@ -15,7 +15,7 @@ int thrd_proc1(void *arg)
     {
         while (atomic_flag_test_and_set(&aflag))
             ;
-        counter = counter + 1;
+        spin_counter = spin_counter + 1;
         atomic_flag_clear(&aflag);
         thrd_sleep(&interv, NULL);
     }
@@ -31,7 +31,7 @@ int thrd_proc2(void *arg)
     {
         while (atomic_flag_test_and_set(&aflag))
             ;
-        counter = counter - 1;
+        spin_counter = spin_counter - 1;
         atomic_flag_clear(&aflag);
         thrd_sleep(&interv, 0);
     }
@@ -46,5 +46,6 @@ void run_spinlock(void)
     thrd_create(&t2, thrd_proc2, 0);
     thrd_join(t1, &(int){0});
     thrd_join(t2, &(int){0});
-    printf("Counter value: %lld\n", counter);
+    printf("spin_counter value: %lld\n", spin_counter);
+     
 }
