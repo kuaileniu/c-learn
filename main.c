@@ -11,6 +11,7 @@
 #include "atomoprs.h"
 #include "spinlock.h"
 #include "thrdloca.h"
+#include "tssdemo.h"
 
 int main()
 {
@@ -27,6 +28,7 @@ int main()
     // run_condcoop();
     // run_atomoprs();
     // run_spinlock();
-    run_thrdloca();
+    // run_thrdloca();
+    run_tssdemo();
     return 0;
 }
