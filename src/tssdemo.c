@@ -8,7 +8,11 @@ tss_t key;
 void destructor(void *value)
 {
     printf("Destructor called for value: %s\n", (char *)value);
-    free(value);
+    if (value != NULL)
+    {
+        free(value);
+        value = NULL; // Avoid dangling pointer
+    }
     printf("Freed.\n");
 }
 

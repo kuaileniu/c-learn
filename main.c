@@ -12,6 +12,7 @@
 #include "spinlock.h"
 #include "thrdloca.h"
 #include "tssdemo.h"
+#include "stackclient.h"
 
 int main()
 {
@@ -29,6 +30,7 @@ int main()
     // run_atomoprs();
     // run_spinlock();
     // run_thrdloca();
-    run_tssdemo();
+    // run_tssdemo();
+    run_stack_client();
     return 0;
 }

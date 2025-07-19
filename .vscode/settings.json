@@ -12,6 +12,8 @@
         "unistd.h": "c",
         "stdatomic.h": "c",
         "spinlock.h": "c",
-        "atomoprs.h": "c"
+        "atomoprs.h": "c",
+        "stdlib.h": "c",
+        "stackadt.h": "c"
     }
 }

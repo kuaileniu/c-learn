@@ -24,7 +24,11 @@ void test_pointer(void)
     printf("ID: %d, Name: %s\n", stu.id, stu.pName);
     printf("一个指针的大小是%d\n", sizeof(char *));
     printf("name:%s\n", stu.pName);
-    free(stu.pName);
+    if (stu.pName != NULL)
+    {
+        free(stu.pName);
+        stu.pName = NULL; // Avoid dangling pointer
+    }
 
     test_pointer_multi();
     show_union();
@@ -41,5 +45,5 @@ void test_pointer_multi(void)
     printf("p = %d\n", *p);
     printf("pp = %d\n", **pp);
     printf("a = %d, p = %d, pp = %d\n", a, *p, **pp);
-    printf("a的地址是%p, p的地址是%p, pp的地址是%p\n",&a, &p,&pp);
+    printf("a的地址是%p, p的地址是%p, pp的地址是%p\n", &a, &p, &pp);
 }
